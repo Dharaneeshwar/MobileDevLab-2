@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <ImageView
+       android:id="@+id/img"
+       android:layout_width="match_parent"
+       android:layout_height="300dp"
+       android:paddingHorizontal="20dp"
+       android:src="@drawable/fort"
+       />
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/img"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        >
+        <Button
+            android:id="@+id/click"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginHorizontal="10dp"
+            android:text="Click ME"
+            android:textColor="@color/text"/>
+        <Button
+            android:id="@+id/clicklong"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="10dp"
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimary"
+            android:layout_height="80dp"
+            android:text="Click ME Longer"
+            android:textColor="@color/text"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/showname"
+        android:layout_marginHorizontal="10dp"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="80dp"
+        android:layout_below="@id/buttons"
+        android:text="Show my name"
+        android:textColor="@color/text"/>
+
+    <EditText
+        android:layout_below="@id/showname"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:id="@+id/name"
+        android:hint="Enter your Name"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+ />
+
+</RelativeLayout>
