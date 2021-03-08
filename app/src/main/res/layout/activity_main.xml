@@ -40,18 +40,37 @@
             android:text="Click ME Longer"
             android:textColor="@color/text"/>
     </LinearLayout>
-    <Button
-        android:id="@+id/showname"
-        android:layout_marginHorizontal="10dp"
+    <LinearLayout
+        android:id="@+id/buttons2"
         android:layout_width="match_parent"
-        android:background="@color/colorPrimary"
-        android:layout_height="80dp"
-        android:layout_below="@id/buttons"
-        android:text="Show my name"
-        android:textColor="@color/text"/>
+        android:layout_height="100dp"
+        android:layout_below="@+id/buttons"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        >
+        <Button
+            android:id="@+id/master_button"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginHorizontal="10dp"
+            android:text="Master Button"
+            android:textColor="@color/text"/>
+        <Button
+            android:id="@+id/showname"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="10dp"
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimary"
+            android:layout_height="80dp"
+            android:text="Show my name"
+            android:textColor="@color/text"/>
+    </LinearLayout>
 
     <EditText
-        android:layout_below="@id/showname"
+        android:layout_column="2"
+        android:layout_below="@id/buttons2"
         android:layout_width="match_parent"
         android:layout_height="62dp"
         android:id="@+id/name"
@@ -59,5 +78,64 @@
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="20dp"
  />
+
+<!--    <GridLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="506dp"-->
+<!--        android:layout_below="@id/name"-->
+<!--        android:alignmentMode="alignMargins"-->
+<!--        android:columnCount="3"-->
+<!--        android:padding="4dp"-->
+<!--        android:rowOrderPreserved="false"-->
+<!--        android:useDefaultMargins="true">-->
+
+
+<!--        <Button-->
+<!--            android:id="@+id/click1"-->
+<!--            android:layout_width="136dp"-->
+<!--            android:layout_height="81dp"-->
+<!--            android:layout_row="0"-->
+<!--            android:background="@color/colorPrimary"-->
+<!--            android:textColor="@color/text"-->
+<!--            android:layout_column="0"-->
+<!--            android:layout_marginRight="40dp"-->
+<!--            android:text="Click Me!" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/show"-->
+<!--            android:layout_width="138dp"-->
+<!--            android:layout_height="340dp"-->
+<!--            android:layout_row="1"-->
+<!--            android:layout_column="0"-->
+<!--            android:text="Show My Name" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/longclcick"-->
+<!--            android:layout_width="157dp"-->
+<!--            android:layout_height="65dp"-->
+<!--            android:layout_row="0"-->
+<!--            android:layout_column="1"-->
+<!--            android:text="Long Click Me!" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/corlc"-->
+<!--            android:layout_width="158dp"-->
+<!--            android:layout_height="137dp"-->
+<!--            android:layout_row="1"-->
+<!--            android:layout_column="1"-->
+<!--            android:text="Click Or Long Click Me!" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/name1"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_row="2"-->
+<!--            android:layout_column="1"-->
+<!--            android:ems="10"-->
+<!--            android:hint="Enter the name"-->
+<!--            android:inputType="textPersonName" />-->
+
+
+<!--    </GridLayout>-->
 
 </RelativeLayout>
